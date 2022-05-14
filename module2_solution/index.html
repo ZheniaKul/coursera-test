@@ -3,15 +3,168 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap Starter Page</title>
+	<title>Menu Page</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<style>
+		* {
+  box-sizing: border-box;
+	;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+}
+
+p {
+  border: 1px solid black;
+  background-color: whitesmoke;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+}
+
+#section1, #section2, #section3 {
+	position: relative;
+	overflow: hidden;
+	background-color: #999999;
+	border: solid #000;
+	border-width: 3px;
+	padding: 30px;
+	margin: 20px;
+	height: 200px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	position: absolute;
+	border-collapse: collapse;
+	border: solid #000;
+	border-width: 0 0 3px 3px;
+	font-size: 20px;
+	padding: 5px;
+	width: 7em;
+	height: 32px;
+	right: 0px;
+	top: -17px;
+}
+
+#paragraph1, #paragraph2, #paragraph3 {
+	position: relative;
+	display: inline-grid;
+	text-align: left;
+	color: #000;
+	font-size: 13px;
+}
+
+#chicken {
+	background-color: #D59898;
+}
+#beef {
+	background-color: #C14543;
+	color: #FFF
+}
+#sushi {
+	background-color: #E5D198;
+}
+
+#section1, #section2, #section3 {
+	position: relative;
+	overflow: hidden;
+	background-color: #999999;
+	border: solid #000;
+	border-width: 3px;
+	padding: 30px;
+	margin: 20px;
+	height: 200px;
+}
+.row {
+  width: 100%;
+}
+
+/*Large Devices*/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+	#section1 {
+		margin-left: 40px;
+	}
+	#section3 {
+		margin-right: 40px;
+	}
+}
+/*Medium Devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		float: left;
+		width: 50%;
+	}
+	.col-md-12 {
+		float: left;
+		width: 100%;
+	}
+	#section1 {
+		margin-left: 40px;
+	}
+	#section2 {
+		margin-right: 40px;
+	}
+	#section3 {
+		margin: 20px 40px 20px 40px;
+	}
+}
+/*Small Devices*/
+@media (max-width: 768px) {
+	.col-sm-12 {
+		float: left;
+		width: 100%
+	}
+	#section1, #section2, #section3 {
+		margin: 10px 40px 10px 40px;
+	}
+}
+</style>
 </head>
-<body>
+<body> 
+	<h1> Our Menu </h1>
+	
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12"> 
+      	<div id="section1">
+      		<h2 id="chicken"> Chicken </h2>
+      		<div id ="paragraph1"> Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising chickens—in comparison to mammals such as cattle or hogs—chicken meat and chicken eggs have become prevalent in numerous cuisines.</div>
+      	</div>
+      </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+      	<div id="section2"> 
+      		<h2 id="beef"> Beef </h2>
+      		<div id="paragraph2"> Beef is the culinary name for meat from cattle. In prehistoric times, humans hunted aurochs and later domesticated them. Since that time, numerous breeds of cattle have been bred specifically for the quality or quantity of their meat.</div>
+      	</div>
+      	</div>
+      </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12">
+      	<div id="section3">
+      		<h2 id="sushi"> Sushi </h2>
+      		<div id=paragraph3> Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.</div>
+      	</div>
+      	</div>
+    </div>
 	<script type="text/javascript"></script>
 	<script src="js/jquery-3.6.0.min"></script>
 	<script src="js/bootstrap.min"></script>
 	<script src="js/script"></script>
-<h1>Hello Coursera! Nice course!</h1>
 </body>
 </html>
