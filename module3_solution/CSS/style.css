@@ -71,15 +71,15 @@ body {
  	background-color: lightpink;
  }
 
-#section1, #section2, #section3 {
+#section {
 	position: relative;
 	overflow: hidden;
-	background-color: whitesmoke;
+	background-color: lightgrey;
 	border: solid black;
 	border-width: 5px;
 	padding: 35px;
 	margin: 25px;
-	height: 250px;
+	height: 1000px;
 }
 
 p {
@@ -90,18 +90,6 @@ p {
 	height: 30px;
 	right: 0px;
 	top: -20px;
-}
-
-#paragraph1, #paragraph2, #paragraph3 {
-	position: relative;
-	display: inline-grid;
-	text-align: left;
-	color: black;
-	font-size: 14px;
-}
-
-#chicken, #beef, #sushi {
-	text-align: center;
 }
 
 .row {
